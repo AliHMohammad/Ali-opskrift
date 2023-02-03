@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style id="background-image">
+        body {background-image: url("https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_1024,h_683/https://www.siroccoconsulting.com/wp-content/uploads/2019/02/Sirocco-Consulting-1024x683.jpeg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    </style>
     <title>Hummus Opskrift</title>
 </head>
 
@@ -16,13 +23,17 @@
         </header>
     </div>
 
-    <div class="grid-item">
-        <nav id="navigation">Mad > Opskrifter > Tyk og cremet hummus</nav>
+    <div class="navigationClass">
+        <nav id="navigation">
+            <p id="Left">Tilbage</p>
+            <p id="Middle">Menu</p>
+            <p id="Right">Om Os</p>
+        </nav>
     </div>
 
-    <div class="grid-container">
-        <section id="introduktion" class="grid-item">
-            <h1>Tyk og cremet hummus</h1>
+    <div class="grid-item">
+        <section id="introduktion">
+            <h1 id="titelRet">Tyk og cremet hummus</h1>
             <h2>Introduktion</h2>
             <p id="intro-tekst">
             Hummus har rødder i den mellemøstlige kultur og er blevet spist i århundreder.
@@ -31,10 +42,10 @@
             og findes nu på menuer over hele verden. Det er også blevet et symbol på arabisk kultur
             og en del af den arabiske diaspora. Udover at være velsmagende er hummus også kendt for
             sine sundhedsmæssige fordele, da det er lavet af næringsrige ingredienser som kikærter.
-            Hummus er nemt at lave og kan tjene som en sund snack eller som en side dish til pitabrød,
-            grøntsager eller lavash. Hummus er også ofte brugt som en base for sandwiches og salater.
+            Hummus er nemt at lave og kan tjene som en sund snack eller som en side dish. Hummus er også ofte brugt som en base for sandwiches og salater.
             Følg denne opskrift for at lave den perfekte hummus med en tyk og cremet konsistens med få ingridienser.
             </p>
+            <br>
             <img class="grid-item" id="hummus-billede" src="https://asset.dr.dk/imagescaler01/http://mad-recipe-pictures-dr-dk.s3.amazonaws.com/prod/recipe/hummusshutterstock-1587286022.jpg" alt="Dejlig hummus">
             <br>
 
@@ -44,19 +55,54 @@
     <div class="grid-item">
         <section id="ingridienser">
             <h2>Ingridienser</h2>
+            <h4>Forberedelsestid: 12 timer</h4>
             <form>
-                <label for="portion" >Antal portioner: </label>
-                <input id="portion" type="number" name="portion" value="1" min="1" step="1">
+                <select name="portion" id="portion">
+                     <option value="1">1</option>                 
+                     <option value="2">2</option>  
+                     <option value="3">3</option>  
+                     <option value="4">4</option>  
+                     <option value="5">5</option>     
+                </select>
+                <label for="portion" > Portion(er)</label>
+            
             </form>
+
             <table>
-                <tr>
-
+                <tr id="førsteRække">
+                    <td id="førsteRækkeOrd">Ingredienser</td>
+                    <td id="førsteRækkeOrd">Mængde</td>
+                    <td id="førsteRækkeOrd">Målestok</td>                    
                 </tr>
                 <tr>
-
+                    <td>Tørrede kikærter</td>    
+                    <td id="kikærterValue">100</td>
+                    <td>gram</td>    
                 </tr>
                 <tr>
+                    <td>Olivenolie</td>
+                    <td id="olivenolieValue">1.5</td>
+                    <td>dl</td>
+                </tr>
+                <tr>
+                    <td>Tahin</td>
+                    <td id="tahinValue">2</td>
+                    <td>spsk</td>
                     
+                </tr>
+                <tr>
+                    <td>Fed presset hvidløg</td>
+                    <td id="hvidløgValue" colspan="2">2</td>
+                </tr>
+                <tr>
+                    <td>Citronsaft</td>
+                    <td id="citronsaftValue">2</td>
+                    <td>tsk</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td id="saltValue">1</td>
+                    <td>tsk</td>
                 </tr>
             </table>
         </section>
@@ -64,14 +110,14 @@
 
     <div class="grid-item">
         <article id="fremgangsmåde"></article>
+        <h2>Fremgangsmåde</h2>
+        <p id="fremgangsmådeTekst">Sæt tørrede kikærterne i blød i en stor skål eller gryde i mindst 10 timer. Hæld derefter vandet fra og skyl dem grundigt. Kog nu kikærterne i cirka 1 time til halvanden (hellere for meget end for lidt). Lad kikærterne stå og køle lidt af (1 times tid cirka, og eventuelt i køleskabet). Hvis du har kogt en stor portion kan du nu dele den ud i mindre portioner i fryseposer og fryse dem ned til en anden god gang. Blend de kogte kikærter i en foodprocessor sammen med cirka 1.5 dl olivenolie, 2 spsk tahin, 2 tsk citronsaft, 2 presset hvidløg og 1 tsk salt. Tilsæt eventuelt mere olie undervejs, hvis der er brug for det. Blend videre indtil konsistensen er så cremet og fin som muligt. Når konsistensen er som ønsket smages der til med salt og citronsaft for at få den helt rigtige smag.</p>
     </div>
 
     <div class="grid-item">
-<aside id="media"></aside>
+        <aside id="media"></aside>
     </div>
 
-
-
-    <script src=""></script>
+    <script src="script.js"></script>
 </body>
 </html>
