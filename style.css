@@ -16,7 +16,7 @@
 
 .grid-media{
     grid-area: me;
-    background-color: black;
+    background-color: purple;
 }
 
 .grid-container{
@@ -28,6 +28,7 @@
     "se" "se" 
     "se" "se" 
     "se" "se"
+    "me" "me"
 }
 
 .grid-navigation a{
@@ -42,6 +43,7 @@
 .grid-section p, h2, h4, table, form{
     position: relative;
     left: 25px;
+    
 }
 
 .grid-section p{
@@ -78,6 +80,7 @@ table, td {
 #førsteRækkeOrd{
     font-size: larger;
     text-align: center;
+    font-weight: 900;
 }
 
 table{

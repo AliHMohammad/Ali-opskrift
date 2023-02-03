@@ -1,6 +1,6 @@
 document.querySelector("#portion").addEventListener("click", beregner);
 
-document.querySelector("#knap").addEventListener("click", tak);
+//document.querySelector("#knap").addEventListener("click", tak);
 
 
 function beregner() {
@@ -33,7 +33,11 @@ function beregner() {
 
     document.querySelector("#fremgangsmådeTekst").textContent = fremgangsTekst;
 }
-
+/*
 function tak() {
-    console.log("Thank you!")
+    console.log("plus 5")
+    letdocument.querySelector("#stjerner").value = + 5;
+    let værdi = document.querySelector("#stjerner").værdi;
+    console.log(værdi);
 }
+*/
