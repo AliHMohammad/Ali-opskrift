@@ -1,0 +1,17 @@
+#hummus-billede{
+    width: 45%;
+    float: right;
+
+}
+#intro-tekst{
+    width: 49%;
+    float: left;
+}
+
+#Titel{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
