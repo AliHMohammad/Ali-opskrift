@@ -1,0 +1,70 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    hd
+
+    background-color: burlywood;
+    
+}
+
+
+#navigation{
+    background-color: beige
+    
+}
+
+#navigation p{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    background-color: wheat;
+}
+
+img{
+    float: right;
+    position: relative;
+    right: 25px;
+    width: 30%;
+}
+
+p, h2, h4, table, form{
+    position: relative;
+    left: 25px;
+}
+
+
+p{
+    width: 48%;
+    text-align: left;
+    border: 1px solid black;
+}
+
+#portion{
+    background-color: burlywood;
+}
+
+#Titel{
+    font-size: 50px;
+    text-align: center;
+}
+
+#titelRet{
+    text-align: center;
+    font-size: 40px;
+}
+
+table, td {
+    border: 1px solid black;
+    background-color: wheat;
+}
+
+#førsteRækkeOrd{
+    font-size: larger;
+    text-align: center;
+}
+
+table{
+    width: 35%;
+
+}
+                <img src="https://media4.giphy.com/media/l4Ki8J3FuiXUJAt0s/giphy.gif?cid=ecf05e475a2hvgyt7hfm37tmh6042f437hjgbpb8z10x2eok&rid=giphy.gif&ct=g" alt="Sexet hummus">

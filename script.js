@@ -1,5 +1,7 @@
 document.querySelector("#portion").addEventListener("click", beregner);
 
+document.querySelector("#knap").addEventListener("click", tak);
+
 
 function beregner() {
     const antal = document.querySelector("#portion").value;
@@ -19,7 +21,7 @@ function beregner() {
     const newCitronsaft = citronsaft * antal;
     const newSalt = salt * antal;
 
-    let fremgangsTekst = `Sæt tørrede kikærterne i blød i en stor skål eller gryde i mindst 10 timer. Hæld derefter vandet fra og skyl dem grundigt. Kog nu kikærterne i cirka 1 time til halvanden (hellere for meget end for lidt). Lad kikærterne stå og køle lidt af (1 times tid cirka, og eventuelt i køleskabet). Hvis du har kogt en stor portion kan du nu dele den ud i mindre portioner i fryseposer og fryse dem ned til en anden god gang. Blend de kogte kikærter i en foodprocessor sammen med cirka ${newOliven} dl olivenolie, ${newTahin} spsk tahin, ${newCitronsaft} tsk citronsaft, ${newHvidløg} presset hvidløg og ${newSalt} tsk salt. Tilsæt eventuelt mere olie undervejs, hvis der er brug for det. Blend videre indtil konsistensen er så cremet og fin som muligt. Når konsistensen er som ønsket smages der til med salt og citronsaft for at få den helt rigtige smag.`
+    let fremgangsTekst = `Blend de kogte kikærter i en foodprocessor sammen med cirka ${newOliven} dl olivenolie, ${newTahin} spsk tahin, ${newCitronsaft} tsk citronsaft, ${newHvidløg} presset hvidløg og ${newSalt} tsk salt. Tilsæt eventuelt mere olie undervejs, hvis der er brug for det.`
     
     
     document.querySelector("#kikærterValue").textContent = newKikærter;
@@ -30,5 +32,8 @@ function beregner() {
     document.querySelector("#saltValue").textContent = newSalt;
 
     document.querySelector("#fremgangsmådeTekst").textContent = fremgangsTekst;
+}
 
+function tak() {
+    console.log("Thank you!")
 }
