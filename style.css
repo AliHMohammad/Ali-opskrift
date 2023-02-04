@@ -16,42 +16,43 @@
 
 .grid-media{
     grid-area: me;
-    background-color: purple;
+    background-color: rgb(153, 109, 52);
 }
 
 .grid-container{
     display: grid;
     
     grid-template-areas: 
-    "hd" "hd"
-    "na" "na"
-    "se" "se" 
-    "se" "se" 
-    "se" "se"
-    "me" "me"
+    'hd hd hd hd hd'
+    'na na na na na'
+    'se se se se se'
+    'se se se se se'
+    'se se se se se'
+    'se se se se se'
+    'me me me me me'
+    'me me me me me'
+
 }
 
 .grid-navigation a{
     border: 1px solid black;
-    width: 24%;
+    width: 33.0506%;
     text-align: center;
     display: inline-block;
     vertical-align: top;
-    background-color: wheat;
+    background-color: wheat; 
 }
 
-.grid-section p, h2, h4, table, form{
+.grid-section p, h2, h4, table, form, ol{
     position: relative;
-    left: 25px;
+    left: 5%;
     
 }
 
 .grid-section p{
     text-align: left;
-    border: 1px solid black;
-    width: 80%;
+    width: 90%;
     font-size: 18px;
-    
 }
 
 
@@ -60,12 +61,18 @@
 }
 
 #navigation{
-    background-color: beige 
+    background-color: burlywood 
 }
 
 #titelHummus{
     text-align: center;
     font-size: 40px;
+    font-family: Papyrus;
+}
+
+#introTekst{
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #portion{
@@ -77,18 +84,23 @@ table, td {
     background-color: wheat;
 }
 
+table{
+    width: 55%;
+}
+
 #førsteRækkeOrd{
     font-size: larger;
     text-align: center;
     font-weight: 900;
 }
 
-table{
-    width: 55%;
-}
-
 li{
-    padding-left: 5px;
+    padding-left: 2%;
     font-size: 18px;
+    text-align: left;
+    width: 88%;
 }
 
+#h4Right{
+    text-align: left
+}

@@ -67,3 +67,16 @@ table{
     width: 35%;
 
 }
+
+
+.grid-container{
+    display: grid;
+    
+    grid-template-areas: 
+    "hd" "hd"
+    "na" "na"
+    "se" "se" 
+    "se" "se" 
+    "se" "se"
+    "me" "me"
+}

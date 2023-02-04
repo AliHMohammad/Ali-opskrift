@@ -1,10 +1,8 @@
 document.querySelector("#portion").addEventListener("click", beregner);
 
-//document.querySelector("#knap").addEventListener("click", tak);
-
-
 function beregner() {
     const antal = document.querySelector("#portion").value;
+    const getPersoner = document.querySelector("#pers");
     console.log(antal);
     
     const kikærter = 100;
@@ -32,12 +30,19 @@ function beregner() {
     document.querySelector("#saltValue").textContent = newSalt;
 
     document.querySelector("#fremgangsmådeTekst").textContent = fremgangsTekst;
+
+    if (antal == 2) {
+        getPersoner.textContent = "Portioner til 2-3 personer";
+    } else if (antal == 3) {
+        getPersoner.textContent = "Portioner til 3-4 personer";
+    } else if (antal == 4) {
+        getPersoner.textContent = "Portioner til 4-5 personer";
+    } else if (antal == 5) {
+        getPersoner.textContent = "Portioner til 5-6 personer";
+    } else if (antal == 1) {
+        getPersoner.textContent = "Portion til 1-2 personer";
+    } else {
+        console.log("This should not happen")
+    }
 }
-/*
-function tak() {
-    console.log("plus 5")
-    letdocument.querySelector("#stjerner").value = + 5;
-    let værdi = document.querySelector("#stjerner").værdi;
-    console.log(værdi);
-}
-*/
+
