@@ -19,9 +19,43 @@ function beregner() {
     const newCitronsaft = citronsaft * antal;
     const newSalt = salt * antal;
 
-    let fremgangsTekst = `Blend de kogte kikærter i en foodprocessor sammen med cirka ${newOliven} dl olivenolie, ${newTahin} spsk tahin, ${newCitronsaft} tsk citronsaft, ${newHvidløg} presset hvidløg og ${newSalt} tsk salt. Tilsæt eventuelt mere olie undervejs, hvis der er brug for det.`
+    const kikærterKcal = 177;     
+    const olivenKcal = 122;
+    const tahinKcal = 178;    
+    const hvidløgKcal = 94;    
+    const citronsaftKcal = 4;    
+    const saltKcal = 0;   
+
+    const newKikærterKcal = kikærterKcal * antal;
+    const newOlivenKcal = olivenKcal * antal;
+    const newTahinKcal = tahinKcal * antal;
+    const newHvidløgKcal = hvidløgKcal * antal;
+    const newCitronsaftKcal = citronsaftKcal * antal;
+    const newSaltKcal = saltKcal * antal;
+
+    const sumKcal =
+        newKikærterKcal +
+        newOlivenKcal +
+        newTahinKcal +
+        newHvidløgKcal +
+        newCitronsaftKcal +
+        newSaltKcal;
+
+    console.log(sumKcal)
+
+    //Kalorier
+    document.querySelector("#kikærterKcal").textContent = newKikærterKcal;
+    document.querySelector("#olivenolieKcal").textContent = newOlivenKcal;
+    document.querySelector("#tahinKcal").textContent = newTahinKcal;
+    document.querySelector("#hvidløgKcal").textContent = newHvidløgKcal;
+    document.querySelector("#citronsaftKcal").textContent = newCitronsaftKcal;
+    document.querySelector("#saltKcal").textContent = newSaltKcal;
+    document.querySelector("#totalKcal").textContent = `${sumKcal} Kcal`;
+
     
+
     
+    //Mængde
     document.querySelector("#kikærterValue").textContent = newKikærter;
     document.querySelector("#olivenolieValue").textContent = newOliven;
     document.querySelector("#tahinValue").textContent = newTahin;
@@ -29,8 +63,9 @@ function beregner() {
     document.querySelector("#citronsaftValue").textContent = newCitronsaft;
     document.querySelector("#saltValue").textContent = newSalt;
 
-    document.querySelector("#fremgangsmådeTekst").textContent = fremgangsTekst;
 
+
+    //Antal personer
     if (antal == 2) {
         getPersoner.textContent = "Portioner til 2-3 personer";
     } else if (antal == 3) {
@@ -44,5 +79,10 @@ function beregner() {
     } else {
         console.log("This should not happen")
     }
+
+    //Opdatering af fremgangsmåde
+    let fremgangsTekst = `Blend de kogte kikærter i en foodprocessor sammen med cirka ${newOliven} dl olivenolie, ${newTahin} spsk tahin, ${newCitronsaft} tsk citronsaft, ${newHvidløg} presset hvidløg og ${newSalt} tsk salt. Tilsæt eventuelt mere olie undervejs, hvis der er brug for det.`;
+    document.querySelector("#fremgangsmådeTekst").textContent = fremgangsTekst;
+
 }
 
