@@ -17,7 +17,7 @@
 
 <body>
 
-    <div class="grid-container">
+    <main class="grid-container">
 
         <header class="grid-header">
             <br>
@@ -31,7 +31,7 @@
             <a target="_blank" href="https://en.wikipedia.org/wiki/Hummus">Om Bayt Ali</a>
         </nav>
  
-        <article class="grid-section">
+        <article class="grid-article">
             
             <h1 id="titelHummus"><span>Fin og cremet hummus</span></h1>
             <br>
@@ -88,7 +88,7 @@
                 <tr>
                     <td>Fed presset hvidløg</td>
                     <td id="hvidløgValue">2</td>
-                    <td id="grey"></td>
+                    <td id="greyBoks"></td>
                     <td id="hvidløgKcal">94</td>
                 </tr>
                 <tr>
@@ -127,9 +127,9 @@
         <section class="grid-anmeldelse">
             <form action="">
                 <br>
-                <label for="anmeldelse"><h2>Anmeldelse af overskrift</h2></label>
+                <label for="anmeldelse"><h2>Anmeldelse af opskrift</h2></label>
                 <p>Stjerner?</p>
-                <textarea name="anmeldelse" id="anmeldelse" cols=50" rows="10" placeholder="Skriv din anmeldelse..." required></textarea>
+                <textarea name="anmeldelse" id="anmeldelse" cols=50" rows="10" placeholder="Skriv din anmeldelse... (max 500 tegn)" required minlength="5" maxlength="500"></textarea>
                 <br>
                 <input type="textarea" placeholder="Indtast dit navn" required>
                 <input type="submit" value="Send">
@@ -137,32 +137,31 @@
             <br><br>
         </section>
 
-        <section class="grid-andre">
+        <aside class="grid-aside">
             <br>
             <h2>Alis Top 3 opskrifter</h2>
             <!--Skriv en teaser her til dine sexy opskrifter-->
             <br><br><br>
-            <h3><a href="https://en.wikipedia.org/wiki/Couscous">Couscous</a></h3>
-            <img src="https://www.cookingclassy.com/wp-content/uploads/2017/04/moroccan-couscous-3.jpg" alt="Couscous">
+            <h3><a href="https://en.wikipedia.org/wiki/Couscous" target="_blank">Couscous</a></h3>
+            <img src="https://www.hiddenvalley.com/wp-content/uploads/2021/04/ranch-pearl-couscous-salad-RDP.jpg" alt="Couscous">
             <br><br>
-            <h3><a href="https://en.wikipedia.org/wiki/Falafel">Falafel</a></h3>
+            <h3><a href="https://en.wikipedia.org/wiki/Falafel" target="_blank">Falafel</a></h3>
             <img src="https://www.myjewishlearning.com/wp-content/uploads/2004/04/falafel-1.jpg" alt="Falafel">
             <br><br>
-            <h3><a href="https://en.wikipedia.org/wiki/B%C3%B6rek">Burek</a></h3>
+            <h3><a href="https://en.wikipedia.org/wiki/B%C3%B6rek" target="_blank">Burek</a></h3>
             <img src="https://www.tastingtable.com/img/gallery/what-makes-burek-so-special-in-slavic-cuisine/intro-1661351563.jpg" alt="Burek">
-            
-        </section>
+        </aside>
             
         <section class="grid-media">
             <h2>Medier</h2>
             <div id="media">
-                <img height="610" src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2022/08/Hummus-main-1.jpg" alt="Sexet hummus">
-                <iframe width="914.713" height="610" src="https://www.youtube.com/embed/nDgJ_4_8eKY" title="Sabra | Super Bowl 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <img width="950" height="610" src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2022/08/Hummus-main-1.jpg" alt="Sexet hummus">
+                <iframe width="950" height="610" src="https://www.youtube.com/embed/nDgJ_4_8eKY" title="Sabra | Super Bowl 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <br><br>
         </section>
 
-    </div>
+    </main>
 
     <script src="script.js"></script>
 </body>

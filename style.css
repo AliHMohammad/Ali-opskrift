@@ -1,61 +1,68 @@
-.grid-container{
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-areas: 
-    'hd hd'
-    'na na' 
-    'se an'
-    're an' 
-    'me me'
-    ;
-    column-gap: 20px;
-    row-gap: 20px;
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "hd hd"
+    "na na"
+    "ar as"
+    "re as"
+    "me me";
+  grid-template-columns: 4fr 1fr;
+  grid-auto-rows: minmax(15px, auto);
+  column-gap: 20px;
+  row-gap: 20px;
 }
 
-.grid-header{
-    grid-area: hd;
-    font-style: italic;
-    font-size: 40px;
-    text-align: center;
+.grid-header {
+  grid-area: hd;
+  font-style: italic;
+  font-size: 40px;
+  text-align: center;
 }
 
-.grid-navigation{
-    grid-area: na;
-    background-color: burlywood 
+.grid-navigation {
+  grid-area: na;
+  background-color: burlywood;
 }
 
-.grid-navigation a{
-    border: 1px solid black;
-    display: table;
-    width: 100%;
-    text-align: center;
-    background-color: wheat; 
+.grid-navigation a {
+  border: 1px solid black;
+  display: table;
+  width: 100%;
+  text-align: center;
+  background-color: wheat;
 }
 
-.grid-section{
-    grid-area: se;
-    background-color: burlywood;
-    border: 2px solid black;
+.grid-article {
+  grid-area: ar;
+  background-color: burlywood;
+  border: 2px solid black;
 }
 
-.grid-section p, .grid-section h2, h4, h5, table, form, ol, .grid.anmeldelse{
-    position: relative;
-    left: 5%;
+.grid-article p,
+.grid-article h2,
+h4,
+h5,
+table,
+form,
+ol,
+.grid.anmeldelse {
+  position: relative;
+  left: 5%;
 }
 
-.grid-section p{
-    text-align: left;
-    width: 90%;
-    font-size: 18px;
+.grid-article p {
+  text-align: left;
+  width: 90%;
+  font-size: 18px;
 }
 
-.grid-andre{
-    grid-area: an;
-    background-color: rgb(153, 109, 52);
-    border: 2px solid black;
+.grid-aside {
+  grid-area: as;
+  background-color: rgb(153, 109, 52);
+  border: 2px solid black;
 }
 
-.grid-andre img{
+.grid-aside img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -64,95 +71,100 @@
   border: 1px solid black;
 }
 
-.grid-andre h3{
-    position: relative;
-    left: 5%;
+.grid-aside h3 {
+  position: relative;
+  left: 5%;
 }
 
-.grid-andre h2, td, #titelHummus{
-    text-align: center;
+.grid-aside h2,
+td,
+#titelHummus {
+  text-align: center;
 }
 
-.grid-anmeldelse{
-    grid-area: re;
-    background-color: burlywood;
-    border: 2px solid black;
+.grid-anmeldelse {
+  grid-area: re;
+  background-color: burlywood;
+  border: 2px solid black;
 }
 
-.grid-media{
-    grid-area: me;
-    background-color: rgb(132, 91, 39);
-    border: 2px solid black;
+.grid-media {
+  grid-area: me;
+  background-color: rgb(132, 91, 39);
+  border: 2px solid black;
 }
 
-.grid-media h2, #media{
-    text-align: center;
+.grid-media h2,
+#media {
+  text-align: center;
 }
 
-
-table, td {
-    border: 1px solid black;
-    background-color: wheat;
+#pers,
+#portion {
+  font-size: 18px;
 }
 
-table{
-    width: 55%;
+table,
+td {
+  border: 1px solid black;
+  background-color: wheat;
 }
 
-li{
-    padding-left: 2%;
-    font-size: 18px;
-    text-align: left;
-    width: 88%;
+table {
+  width: 55%;
 }
 
-
-#Titel span{
-    background-color: rgb(153, 109, 52);
+li {
+  padding-left: 2%;
+  font-size: 18px;
+  text-align: left;
+  width: 88%;
 }
 
-#portion{
-    background-color: burlywood 
+#Titel span {
+  background-color: rgb(153, 109, 52);
 }
 
-
-#titelHummus span{
-    font-size: 40px;
-    font-family: Papyrus;
-    border-bottom: 1px solid black;
+#portion {
+  background-color: burlywood;
 }
 
-#introTekst, li{
-    text-align: justify;
-    text-justify: inter-word;
+#titelHummus span {
+  font-size: 40px;
+  font-family: Papyrus;
+  border-bottom: 1px solid black;
 }
 
-
-#førsteRækkeOrd{
-    font-size: larger;
-    text-align: center;
-    font-weight: 900;
+#introTekst,
+li {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
-
-#kalorierIalt{
-    font-weight: 900;
-    text-align: right;
-    background-color: rgb(210, 144, 57);
+#førsteRækkeOrd {
+  font-size: larger;
+  text-align: center;
+  font-weight: 900;
 }
 
-#totalKcal{
-    text-align: center;
-    font-weight: 900;
-    background-color: rgb(210, 144, 57);
+#kalorierIalt {
+  font-weight: 900;
+  text-align: right;
+  background-color: rgb(210, 144, 57);
 }
 
-#reviewBoks{
-    height:150px;
-    width: 400px;
+#totalKcal {
+  text-align: center;
+  font-weight: 900;
+  background-color: rgb(210, 144, 57);
 }
 
-#grey{
-    opacity: 0.5;
-    background-color: grey;
+#reviewBoks {
+  height: 150px;
+  width: 400px;
+}
+
+#greyBoks {
+  opacity: 0.5;
+  background-color: grey;
 }

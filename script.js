@@ -1,6 +1,8 @@
 document.querySelector("#portion").addEventListener("click", beregner);
 
 function beregner() {
+
+    // Gemmer værdier i const
     const antal = document.querySelector("#portion").value;
     const getPersoner = document.querySelector("#pers");
     console.log(antal);
