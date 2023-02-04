@@ -4,9 +4,9 @@
     grid-template-areas: 
     'hd hd'
     'na na' 
-    'se an' 
+    'se an'
+    're an' 
     'me me'
-    'fo fo'
     ;
     column-gap: 20px;
     row-gap: 20px;
@@ -38,10 +38,9 @@
     border: 2px solid black;
 }
 
-.grid-section p, .grid-section h2, h4, h5, table, form, ol, input{
+.grid-section p, .grid-section h2, h4, h5, table, form, ol, .grid.anmeldelse{
     position: relative;
     left: 5%;
-    
 }
 
 .grid-section p{
@@ -54,7 +53,7 @@
     grid-area: an;
     background-color: rgb(153, 109, 52);
     border: 2px solid black;
-    height: 1550px;
+    height: 2000px;
 }
 
 .grid-andre img{
@@ -76,6 +75,12 @@
     text-align: center;
 }
 
+.grid-anmeldelse{
+    grid-area: re;
+    background-color: burlywood;
+    border: 2px solid black;
+}
+
 
 .grid-media{
     grid-area: me;
@@ -85,10 +90,6 @@
 
 .grid-media h2, #media{
     text-align: center;
-}
-
-.grid-fonter{
-    grid-area: fo;
 }
 
 
