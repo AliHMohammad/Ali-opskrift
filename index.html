@@ -19,24 +19,19 @@
 
     <div class="grid-container">
 
-        <div class="grid-header">
-            <header>
-                <br>
-                <h1 id="Titel"><span>Alis Bayt</span></h1>
-            </header>
+        <header class="grid-header">
             <br>
-            <br>
-        </div>
+            <h1 id="Titel"><span>Bayt Ali</span></h1>
+            <br><br>
+        </header>
         
-        <div class="grid-navigation">
-            <nav id="navigation">
-                <a target="_blank" href="https://www.facebook.com/AIiHM8/">Facebook</a>
-                <a target="_blank" href="https://www.linkedin.com/in/alimohammad1209/">LinkedIn</a>
-                <a target="_blank" href="https://en.wikipedia.org/wiki/Hummus">Om Alis Bayt</a>
-            </nav>
-        </div>
+        <nav id="navigation" class="grid-navigation">  
+            <a target="_blank" href="https://www.facebook.com/AIiHM8/">Facebook</a>
+            <a target="_blank" href="https://www.linkedin.com/in/alimohammad1209/">LinkedIn</a>
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Hummus">Om Bayt Ali</a>
+        </nav>
  
-        <div class="grid-section">
+        <article class="grid-section">
             
             <h1 id="titelHummus"><span>Fin og cremet hummus</span></h1>
             <br>
@@ -126,43 +121,47 @@
                 <li>Blend videre indtil konsistensen er så cremet og fin som muligt. Når konsistensen er som ønsket smages der til med salt og citronsaft for at få den helt rigtige smag.</li>
                 <li>Nyd Alis bedste hummus!</li>
             </ol>
-        </div>
+            <br><br>
+        </article>
 
-        <div class="grid-anmeldelse">
+        <section class="grid-anmeldelse">
             <form action="">
                 <br>
-                <label for="anmeldelse">Anmeldelse af overskrift</label>
-                <br>
-                <textarea name="anmeldelse" id="anmeldelse" cols=50" rows="10"></textarea>
+                <label for="anmeldelse"><h2>Anmeldelse af overskrift</h2></label>
+                <p>Stjerner?</p>
+                <textarea name="anmeldelse" id="anmeldelse" cols=50" rows="10" placeholder="Skriv din anmeldelse..." required></textarea>
                 <br>
                 <input type="textarea" placeholder="Indtast dit navn" required>
-                <input type="button" value="Submit">
+                <input type="submit" value="Send">
             </form>
-        </div>
+            <br><br>
+        </section>
 
-        <div class="grid-andre">
+        <section class="grid-andre">
             <br>
-            <h2>Alis top 4 opskrifter</h2>
-            <br>
+            <h2>Alis Top 3 opskrifter</h2>
+            <!--Skriv en teaser her til dine sexy opskrifter-->
+            <br><br><br>
             <h3><a href="https://en.wikipedia.org/wiki/Couscous">Couscous</a></h3>
             <img src="https://www.cookingclassy.com/wp-content/uploads/2017/04/moroccan-couscous-3.jpg" alt="Couscous">
+            <br><br>
             <h3><a href="https://en.wikipedia.org/wiki/Falafel">Falafel</a></h3>
             <img src="https://www.myjewishlearning.com/wp-content/uploads/2004/04/falafel-1.jpg" alt="Falafel">
+            <br><br>
             <h3><a href="https://en.wikipedia.org/wiki/B%C3%B6rek">Burek</a></h3>
             <img src="https://www.tastingtable.com/img/gallery/what-makes-burek-so-special-in-slavic-cuisine/intro-1661351563.jpg" alt="Burek">
-            <h3><a href="https://en.wikipedia.org/wiki/Lasagna">Lasagne</a></h3>
-            <img src="https://i.ytimg.com/vi/dzuyEiDcbnQ/maxresdefault.jpg" alt="Lasagne">
-        </div>
             
-        <div class="grid-media">
+        </section>
+            
+        <section class="grid-media">
             <h2>Medier</h2>
             <div id="media">
                 <img height="610" src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2022/08/Hummus-main-1.jpg" alt="Sexet hummus">
                 <iframe width="914.713" height="610" src="https://www.youtube.com/embed/nDgJ_4_8eKY" title="Sabra | Super Bowl 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <br><br>
-        </div>
-    
+        </section>
+
     </div>
 
     <script src="script.js"></script>

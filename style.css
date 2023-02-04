@@ -10,7 +10,6 @@
     ;
     column-gap: 20px;
     row-gap: 20px;
-    
 }
 
 .grid-header{
@@ -22,6 +21,7 @@
 
 .grid-navigation{
     grid-area: na;
+    background-color: burlywood 
 }
 
 .grid-navigation a{
@@ -53,7 +53,6 @@
     grid-area: an;
     background-color: rgb(153, 109, 52);
     border: 2px solid black;
-    height: 2000px;
 }
 
 .grid-andre img{
@@ -63,7 +62,6 @@
   width: 90%;
   height: 20%;
   border: 1px solid black;
-
 }
 
 .grid-andre h3{
@@ -81,10 +79,9 @@
     border: 2px solid black;
 }
 
-
 .grid-media{
     grid-area: me;
-    background-color: rgb(153, 109, 52);
+    background-color: rgb(132, 91, 39);
     border: 2px solid black;
 }
 
@@ -114,7 +111,7 @@ li{
     background-color: rgb(153, 109, 52);
 }
 
-#navigation, #portion{
+#portion{
     background-color: burlywood 
 }
 
@@ -123,10 +120,9 @@ li{
     font-size: 40px;
     font-family: Papyrus;
     border-bottom: 1px solid black;
-    
 }
 
-#introTekst{
+#introTekst, li{
     text-align: justify;
     text-justify: inter-word;
 }
