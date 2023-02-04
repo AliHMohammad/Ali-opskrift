@@ -1,3 +1,14 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'hd hd hd hd'
+    'na na na na' 
+    'se se se an' 
+    'me me me me';
+    column-gap: 30px;
+    row-gap: 20px;
+}
+
 .grid-header{
     grid-area: hd;
     font-style: italic;
@@ -12,26 +23,41 @@
 .grid-section{
     grid-area: se;
     background-color: burlywood;
+    border: 2px solid black;
 }
+
+.grid-andre{
+    grid-area: an;
+    background-color: rgb(153, 109, 52);
+    border: 2px solid black;
+    width: 400px;
+    height: 1550px;
+}
+
+.grid-andre img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 20%;
+  border: 1px solid black;
+
+}
+
+.grid-andre h3{
+    position: relative;
+    left: 5%;
+}
+
+.grid-andre h2{
+    text-align: center;
+}
+
 
 .grid-media{
     grid-area: me;
     background-color: rgb(153, 109, 52);
-}
-
-.grid-container{
-    display: grid;
-    
-    grid-template-areas: 
-    'hd hd hd hd hd'
-    'na na na na na'
-    'se se se se se'
-    'se se se se se'
-    'se se se se se'
-    'se se se se se'
-    'me me me me me'
-    'me me me me me'
-
+    border: 2px solid black;
 }
 
 .grid-navigation a{
@@ -43,7 +69,7 @@
     background-color: wheat; 
 }
 
-.grid-section p, h2, h4, h5, table, form, ol{
+.grid-section p, .grid-section h2,.grid-media h2, h4, h5, table, form, ol{
     position: relative;
     left: 5%;
     
@@ -57,7 +83,7 @@
 
 
 #Titel span{
-    background-color: aliceblue;
+    background-color: rgb(153, 109, 52);
 }
 
 #navigation{
@@ -66,8 +92,13 @@
 
 #titelHummus{
     text-align: center;
+}
+
+#titelHummus span{
     font-size: 40px;
     font-family: Papyrus;
+    border-bottom: 1px solid black;
+    
 }
 
 #introTekst{
@@ -121,8 +152,9 @@ li{
     text-align: center;
 }
 
-#hvidløgValue{
-    text-align: ;
+#grey{
+    opacity: 0.5;
+    background-color: grey;
 }
 
 td{

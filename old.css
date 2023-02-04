@@ -1,3 +1,19 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'hd hd hd hd hd'
+    'na na na na na'
+    'se se se se se'
+    'se se se se se'
+    'se se se se se'
+    'se se se se se'
+    'me me me me me'
+    'me me me me me';
+    row-gap: 20px;
+    column-gap: 50px;
+
+}
+
 .grid-header{
     grid-area: hd;
     font-style: italic;
@@ -19,21 +35,6 @@
     background-color: rgb(153, 109, 52);
 }
 
-.grid-container{
-    display: grid;
-    
-    grid-template-areas: 
-    'hd hd hd hd hd'
-    'na na na na na'
-    'se se se se se'
-    'se se se se se'
-    'se se se se se'
-    'se se se se se'
-    'me me me me me'
-    'me me me me me'
-
-}
-
 .grid-navigation a{
     border: 1px solid black;
     width: 33.0506%;
@@ -43,7 +44,7 @@
     background-color: wheat; 
 }
 
-.grid-section p, h2, h4, table, form, ol{
+.grid-section p, h2, h4, h5, table, form, ol{
     position: relative;
     left: 5%;
     
@@ -61,7 +62,7 @@
 }
 
 #navigation{
-    background-color: burlywood; 
+    background-color: burlywood 
 }
 
 #titelHummus{
@@ -101,10 +102,30 @@ li{
     width: 88%;
 }
 
+#kalorierIalt{
+    font-weight: 900;
+    text-align: right;
+    background-color: rgb(210, 144, 57);
+}
+
+#totalKcal{
+    text-align: center;
+    font-weight: 900;
+    background-color: rgb(210, 144, 57);
+}
+
 #h4Right{
     text-align: left
 }
 
 #media{
+    text-align: center;
+}
+
+#hvidløgValue{
+    text-align: ;
+}
+
+td{
     text-align: center;
 }
