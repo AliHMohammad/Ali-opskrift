@@ -84,7 +84,7 @@ function beregner() {
     }
 
     //Opdatering af fremgangsmåde punkt 4 tekst
-    let fremgangsTekst = `Blend de kogte kikærter i en foodprocessor sammen med cirka ${newOliven} dl olivenolie, ${newTahin} spsk tahin, ${newCitronsaft} tsk citronsaft, ${newHvidløg} presset hvidløg og ${newSalt} tsk salt. Tilsæt eventuelt mere olie undervejs, hvis der er brug for det.`;
+    let fremgangsTekst = `Blend de kogte kikærter i en foodprocessor sammen med cirka ${newOliven} cL olivenolie, ${newTahin} spsk tahin, ${newCitronsaft} tsk citronsaft, ${newHvidløg} presset hvidløg og ${newSalt} tsk salt. Tilsæt eventuelt mere olie undervejs, hvis der er brug for det.`;
     document.querySelector("#fremgangsmådeTekst").textContent = fremgangsTekst;
 
 }

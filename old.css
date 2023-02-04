@@ -129,3 +129,15 @@ li{
 td{
     text-align: center;
 }
+
+
+
+
+
+.grid-navigation a{
+    border: 1px solid black;
+    width: 33.0506%;
+    text-align: center;
+    display: inline-block;
+    background-color: wheat; 
+}
