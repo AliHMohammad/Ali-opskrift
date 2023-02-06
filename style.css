@@ -31,11 +31,7 @@ body{
     "na na na";
 }
 
-#navigation{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .grid-navigation a {
   border: 1px solid black;
@@ -49,7 +45,6 @@ body{
   grid-area: ar;
   background-color: burlywood;
   border: 2px solid black;
-
 }
 
 
@@ -118,10 +113,7 @@ td,
   text-align: center;
 }
 
-#pers,
-#portion {
-  font-size: 18px;
-}
+
 
 table,
 td {
@@ -144,8 +136,19 @@ li {
   background-color: rgb(153, 109, 52);
 }
 
+#navigation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #portion {
   background-color: burlywood;
+}
+
+#pers,
+#portion {
+  font-size: 18px;
 }
 
 #titelPåOpskrift span {
@@ -178,6 +181,10 @@ li {
   background-color: rgb(210, 144, 57);
 }
 
+#påDagen, #dagenFør{
+  text-decoration: underline;
+}
+
 #reviewBoks {
   height: 150px;
   width: 400px;
@@ -197,7 +204,3 @@ li {
   margin-bottom: 20px;
 }
 
-#påDagen, #dagenFør{
-  text-decoration: underline;
-
-}
