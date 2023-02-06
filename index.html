@@ -33,7 +33,7 @@
  
         <article class="grid-article">
             
-            <h1 id="titelHummus"><span>Fin og cremet hummus</span></h1>
+            <h1 id="titelPåOpskrift"><span>Fin og cremet hummus</span></h1>
             <br>
             <h2>Introduktion</h2>
             <p id="introTekst">
@@ -61,11 +61,11 @@
             </form>
             <br>
             <table>
-                <tr>
-                    <td id="førsteRækkeOrd">Ingredienser</td>
-                    <td id="førsteRækkeOrd">Mængde</td>
-                    <td id="førsteRækkeOrd">Målestok</td>  
-                    <td id="førsteRækkeOrd">Kalorier* (Kcal)</td>                  
+                <tr id="førsteRækkeOrd">
+                    <td>Ingredienser</td>
+                    <td>Mængde</td>
+                    <td>Målestok</td>  
+                    <td>Kalorier* (Kcal)</td> 
                 </tr>
                 <tr>
                     <td>Tørrede kikærter</td>    
@@ -115,12 +115,12 @@
             <h4>Forberedelsestid: 12 timer</h4>
             <h4>Tilberedelsestid: 30 minutter</h4>
             <ol>
-                <li>Sæt tørrede kikærterne i blød i en stor skål eller gryde i mindst 10 timer.</li>
-                <li>Hæld derefter vandet fra og skyl dem grundigt. Kog nu kikærterne i cirka 1 time til halvanden (hellere for meget end for lidt).</li>
-                <li>Lad kikærterne stå og køle lidt af (1 times tid cirka, og eventuelt i køleskabet). Hvis du har kogt en stor portion kan du nu dele den ud i mindre portioner i fryseposer og fryse dem ned til en anden god gang.</li>
-                <li id="fremgangsmådeTekst">Blend de kogte kikærter i en foodprocessor sammen med cirka 1.5 cL olivenolie, 2 spsk tahin, 2 tsk citronsaft, 2 presset hvidløg og 1 tsk salt. Tilsæt eventuelt mere olie undervejs, hvis der er brug for det.</li>
-                <li>Blend videre indtil konsistensen er så cremet og fin som muligt. Når konsistensen er som ønsket smages der til med salt og citronsaft for at få den helt rigtige smag.</li>
-                <li>Nyd Alis bedste hummus!</li>
+                <li class="fremgangSpace">Sæt tørrede kikærterne i blød i en stor skål eller gryde i mindst 10 timer.</li>
+                <li class="fremgangSpace">Hæld derefter vandet fra og skyl dem grundigt. Kog nu kikærterne i cirka 1 time til halvanden (hellere for meget end for lidt).</li>
+                <li class="fremgangSpace">Lad kikærterne stå og køle lidt af (1 times tid cirka, og eventuelt i køleskabet). Hvis du har kogt en stor portion kan du nu dele den ud i mindre portioner i fryseposer og fryse dem ned til en anden god gang.</li>
+                <li class="fremgangSpace" id="fremgangsmådeTekst">Blend de kogte kikærter i en foodprocessor sammen med cirka 1.5 cL olivenolie, 2 spsk tahin, 2 tsk citronsaft, 2 presset hvidløg og 1 tsk salt. Tilsæt eventuelt mere olie undervejs, hvis der er brug for det.</li>
+                <li class="fremgangSpace">Blend videre indtil konsistensen er så cremet og fin som muligt. Når konsistensen er som ønsket smages der til med salt og citronsaft for at få den helt rigtige smag.</li>
+                <li class="fremgangSpace">Nyd Alis bedste hummus!</li>
             </ol>
             <br><br>
         </article>
@@ -128,9 +128,9 @@
         <section class="grid-anmeldelse">
             <form action="PUSH">
                 <br>
-                <label for="anmeldelse"><h2>Anmeldelse af opskrift</h2></label>
+                <label id="anmeldelseLabel" for="anmeldelse">Anmeldelse af opskrift</label>
                 <p>Stjerner?</p>
-                <textarea name="anmeldelse" id="anmeldelse" cols=40" rows="10" placeholder="Skriv din anmeldelse... (max 500 tegn)" required minlength="5" maxlength="500"></textarea>
+                <textarea name="anmeldelse" id="anmeldelse" cols="40" rows="10" placeholder="Skriv din anmeldelse... (max 500 tegn)" required minlength="5" maxlength="500"></textarea>
                 <br>
                 <input type="textarea" placeholder="Indtast dit navn" required>
                 <input type="submit" value="Send">
@@ -143,20 +143,20 @@
             <h2>Alis andre opskrifter</h2>
             <!--Skriv en teaser her til dine sexy opskrifter-->
             <br><br><br>
-            <h3><a href="https://en.wikipedia.org/wiki/Couscous" target="_blank">Couscous</a></h3>
-            <img src="https://www.hiddenvalley.com/wp-content/uploads/2021/04/ranch-pearl-couscous-salad-RDP.jpg" alt="Couscous">
+            <h3><a>Couscous</a></h3>
+            <img src="https://live.staticflickr.com/2556/3839199342_c6c4f5bc36_b.jpg" alt="Couscous">
             <br><br>
             <h3><a href="falafel.html">Falafel</a></h3>
-            <img src="https://www.myjewishlearning.com/wp-content/uploads/2004/04/falafel-1.jpg" alt="Falafel">
+            <img src="https://live.staticflickr.com/8692/16169793153_ab4482d438_b.jpg" alt="Falafel">
             <br><br>
-            <h3><a href="https://en.wikipedia.org/wiki/B%C3%B6rek" target="_blank">Burek</a></h3>
-            <img src="https://www.tastingtable.com/img/gallery/what-makes-burek-so-special-in-slavic-cuisine/intro-1661351563.jpg" alt="Burek">
+            <h3><a>Burek</a></h3>
+            <img src="https://media.alessandrastyle.com/2022/11/Spanakopita001.jpg" alt="Burek">
         </aside>
             
         <section class="grid-media">
             <h2>Medier</h2>
             <div id="media">
-                <img width="950" height="610" src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2022/08/Hummus-main-1.jpg" alt="Sexet hummus">
+                <img width="950" height="610" src="https://vegan.rocks/blog/is-hummus-keto/feature_hu12e3964bb32cebdbb196c3aa16e2366e_339629_1200x1200_fill_q100_box_smart1.jpg" alt="Sexet hummus">
                 <iframe width="950" height="610" src="https://www.youtube.com/embed/nDgJ_4_8eKY" title="Sabra | Super Bowl 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <br><br>

@@ -97,7 +97,7 @@ object-fit:?
 
 .grid-aside h2,
 td,
-#titelHummus {
+#titelPåOpskrift {
   text-align: center;
 }
 
@@ -148,7 +148,7 @@ li {
   background-color: burlywood;
 }
 
-#titelHummus span {
+#titelPåOpskrift span {
   font-size: 40px;
   font-family: Papyrus;
   border-bottom: 1px solid black;
@@ -163,18 +163,18 @@ li {
 #førsteRækkeOrd {
   font-size: larger;
   text-align: center;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 #kalorierIalt {
-  font-weight: 900;
+  font-weight: bold;
   text-align: right;
   background-color: rgb(210, 144, 57);
 }
 
 #totalKcal {
   text-align: center;
-  font-weight: 900;
+  font-weight: bold;
   background-color: rgb(210, 144, 57);
 }
 
@@ -183,9 +183,21 @@ li {
   width: 400px;
 }
 
+#anmeldelseLabel{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
 #greyBoks {
   opacity: 0.5;
   background-color: grey;
 }
 
+.fremgangSpace:not(:last-child){
+  margin-bottom: 20px;
+}
 
+#påDagen, #dagenFør{
+  text-decoration: underline;
+
+}

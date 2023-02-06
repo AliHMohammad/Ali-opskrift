@@ -31,7 +31,7 @@
         </nav>
 
         <article class="grid-article">
-        <h1 id="titelHummus"><span>Falafel</span></h1>
+        <h1 id="titelPåOpskrift"><span>Falafel</span></h1>
             <br>
             <h2>Introduktion</h2>
             <p id="introTekst">
@@ -58,11 +58,11 @@
             </form>
             <br>
             <table>
-                <tr>
-                    <td id="førsteRækkeOrd">Ingredienser</td>
-                    <td id="førsteRækkeOrd">Mængde</td>
-                    <td id="førsteRækkeOrd">Målestok</td>  
-                    <td id="førsteRækkeOrd">Kalorier* (Kcal)</td>                  
+                <tr id="førsteRækkeOrd">
+                    <td>Ingredienser</td>
+                    <td>Mængde</td>
+                    <td>Målestok</td>  
+                    <td>Kalorier* (Kcal)</td>                  
                 </tr>
                 <tr>
                     <td>Tørrede kikærter</td>    
@@ -90,44 +90,43 @@
                 </tr>
                 <tr>
                     <td>Hvedemel</td>
-                    <td id="hvedemelValue">1,5</td>
+                    <td id="hvedemelValue">1.5</td>
                     <td>spsk</td>
                     <td id="hvedemelKcal"></td>
                 </tr>
                 <tr>
                     <td>Groft salt</td>
-                    <td id="saltValue">1,5</td>
+                    <td id="saltValue">1.5</td>
                     <td>tsk</td>
                     <td id="saltKcal">0</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Stødt spidskommen</td>
+                    <td id="stødtSpidsValue">1</td>
+                    <td>tsk</td>
+                    <td id="stødtSpidsKcal"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Stødt koriander</td>
+                    <td id="stødtKorianderValue">1</td>
+                    <td>tsk</td>
+                    <td id="stødtKorianderKcal"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Bagepulver</td>
+                    <td id="bagepulverValue">0.5</td>
+                    <td>tsk</td>
+                    <td id="bagepulverKcal"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Cayennepeber</td>
+                    <td id="cayennepeberValue">0.25</td>
+                    <td>tsk</td>
+                    <td id="cayennepeberKcal"></td>
                 </tr>
                 <tr>
                     <td id="kalorierIalt" colspan="3">Kalorier ialt: </td>
                     <td id="totalKcal"></td>
-                    
                 </tr>
             </table>
             <h5>*: Kalorier er vejledende</h5>
@@ -141,24 +140,24 @@
             </ul>
             <p id="påDagen">På dagen</p>
             <ol>
-                <li>
+                <li class="fremgangSpace">
                     Sigt vandet fra kikærterne og skyl dem i en sigte.
                 </li>
-                <li>Kør kikærter, krydderurter, hvidløg og løg i en foodprocessor i 15-20 sek. til en grov fars.
+                <li class="fremgangSpace">Kør kikærter, krydderurter, hvidløg og løg i en foodprocessor i 15-20 sek. til en grov fars.
                     Brug "pulse" funktionen, så du kan følge med undervejs - og skrab kanterne ned halvvejs.
                     Farsen skal være finthakket, men ikke køres til mos.
                 </li>
-                <li>Kom kikærte-farsen i en skål og rør den sammen med resten af ingredienserne.
+                <li class="fremgangSpace">Kom kikærte-farsen i en skål og rør den sammen med resten af ingredienserne.
                     Gør hænderne våde og form farsen til ca. 12 kugler.
                 </li>
-                <li>
+                <li class="fremgangSpace">
                     Kom olien i en sauterpande - der skal være ca. 2 cm olie i panden - og varm den op til 180°.
                     Er olien ikke varm nok, falder falaflerne fra hinanden.
                 </li>
-                <li>
+                <li class="fremgangSpace">
                     Steg falaflerne i ca. 10 min. - eller til de er sprøde og gyldne. Vend dem nogle gange undervejs.
                 </li>
-                <li>Velbekomme!</li>
+                <li class="fremgangSpace">Velbekomme!</li>
             </ol>
             <br><br>    
         </article>
@@ -166,7 +165,7 @@
         <section class="grid-anmeldelse">
             <form action="PUSH">
                 <br>
-                <label for="anmeldelse"><h2>Anmeldelse af opskrift</h2></label>
+                <label id="anmeldelseLabel" for="anmeldelse">Anmeldelse af opskrift</label>
                 <p>Stjerner?</p>
                 <textarea name="anmeldelse" id="anmeldelse" cols="40" rows="10" placeholder="Skriv din anmeldelse... (max 500 tegn)" required minlength="5" maxlength="500"></textarea>
                 <br>
@@ -181,17 +180,18 @@
             <h2>Alis andre opskrifter</h2>
             <!--Skriv en teaser her til dine sexy opskrifter-->
             <br><br><br>
-            <h3><a href="https://en.wikipedia.org/wiki/Couscous" target="_blank">Couscous</a></h3>
-            <img src="https://www.hiddenvalley.com/wp-content/uploads/2021/04/ranch-pearl-couscous-salad-RDP.jpg" alt="Couscous">
+            <h3><a>Couscous</a></h3>
+            <img src="https://live.staticflickr.com/2556/3839199342_c6c4f5bc36_b.jpg" alt="Couscous">
             <br><br>
             <h3><a href="./index.html">Hummus</a></h3>
-            <img src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2022/08/Hummus-main-1.jpg" alt="Hummus">
+            <img src="https://vegan.rocks/blog/is-hummus-keto/feature_hu12e3964bb32cebdbb196c3aa16e2366e_339629_1200x1200_fill_q100_box_smart1.jpg" alt="Hummus">
             <br><br>
-            <h3><a href="https://en.wikipedia.org/wiki/B%C3%B6rek" target="_blank">Burek</a></h3>
-            <img src="https://www.tastingtable.com/img/gallery/what-makes-burek-so-special-in-slavic-cuisine/intro-1661351563.jpg" alt="Burek">
+            <h3>Burek</h3>
+            <img src="https://media.alessandrastyle.com/2022/11/Spanakopita001.jpg" alt="Burek">
         </aside>
 
         <section class="grid-media">
+            <h2>Medier</h2>
 
         </section>
 
