@@ -90,4 +90,3 @@ function beregner() {
     document.querySelector("#fremgangsmådeTekst").textContent = fremgangsTekst;
 
 }
-
