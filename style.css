@@ -75,7 +75,12 @@ ul,
   grid-area: as;
   background-color: rgb(153, 109, 52);
   border: 2px solid black;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+
+
+
 
 @media (max-width: 45em) {
 .grid-aside {
