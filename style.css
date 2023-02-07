@@ -4,6 +4,10 @@ body{
   font-family: Arial;
 }
 
+h1, h2 {
+  font-family: 'Times New Roman';
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -27,6 +31,7 @@ body{
 
 .grid-navigation {
   grid-area: na;
+  font-family: 'Times New Roman';
   background-color: burlywood;
   display: grid;
   grid-template-areas:
@@ -111,6 +116,10 @@ td,
   text-align: center;
 }
 
+.grid-aside h2, .grid-navigation{
+  font-style: italic
+}
+
 .grid-aside p{
   border: 1px solid black;
   background-color: burlywood;
@@ -161,11 +170,11 @@ li {
   width: 88%;
 }
 
-
-
-#Titel span, #underTitel span {
+header span {
   background-color: rgb(153, 109, 52);
 }
+
+
 
 #navigation{
   display: flex;
