@@ -4,7 +4,7 @@ body{
   font-family: Arial;
 }
 
-h1, h2 {
+h1, h2, #anmeldelseLabel, .grid-aside h3 {
   font-family: 'Times New Roman';
 }
 
@@ -53,6 +53,7 @@ h1, h2 {
   border: 2px solid black;
 }
 
+/**/
 .grid-article p,
 .grid-article h2,
 h4,
@@ -114,6 +115,7 @@ object-fit:?
 td,
 #titelPåOpskrift {
   text-align: center;
+  left: 0%;
 }
 
 .grid-aside h2, .grid-navigation{
