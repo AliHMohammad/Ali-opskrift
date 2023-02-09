@@ -79,7 +79,7 @@ ul,
   font-size: 18px;
 }
 
-.fremgangSpace:not(:last-child){
+.fremgangmåde li:not(:last-child){
   margin-bottom: 20px;
 }
 
