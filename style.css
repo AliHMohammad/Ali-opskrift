@@ -4,7 +4,7 @@ body{
   background-attachment: fixed;
   background-size: cover;
   overflow-x: hidden;
-  min-width:550px;
+  min-width:700px;
   font-family: 'Roboto Slab', serif;
   
 }
@@ -21,7 +21,7 @@ h1, h2, #anmeldelseLabel, .grid-aside h3 {
     "ar as"
     "re as"
     "me me";
-  grid-template-columns: 7fr 2fr;
+  grid-template-columns: 7fr 3fr;
   grid-auto-rows: minmax(10px, auto);
   column-gap: 20px;
   row-gap: 20px;
@@ -94,11 +94,28 @@ ul,
 
 
 
-@media (max-width: 45em) {
-.grid-aside {
-display: none;
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-areas:
+    "hd"
+    "na"
+    "ar"
+    "re"
+    "as"
+    "me";
+    grid-template-columns: 120vh;
+  }
+  #media{
+    width: 100%;
+  }
 }
+
+#media img, #media iframe {
+  width: 100vh;
+  height: 60vh;
 }
+
+
 
 .grid-aside img {
   display: block;
@@ -156,7 +173,9 @@ td,
 }
 
 .grid-media img, .grid-media iframe{
-  border: 4px solid rgb(185, 137, 32)
+  border: 4px solid rgb(185, 137, 32);
+  width: 100vh;
+  height: 60vh;
 }
 
 
@@ -250,6 +269,10 @@ li {
   background-color: grey;
 }
 
-.grid-anmeldelse, .grid-article,.grid-aside,.grid-container,.grid-header,.grid-media,.grid-navigation,.grid.anmeldelse{
+#otherText{
+  padding: 5px;
+}
+
+.grid-anmeldelse, .grid-article, .grid-aside,.grid-container,.grid-header,.grid-media,.grid-navigation,.grid.anmeldelse, #otherText{
   border-radius: 25px
 }

@@ -46,8 +46,6 @@ function beregner() {
         newCitronsaftKcal +
         newSaltKcal;
 
-    console.log(sumKcal)
-
     //Kalorier (tabel)
     document.querySelector("#kikærterKcal").textContent = newKikærterKcal;
     document.querySelector("#olivenolieKcal").textContent = newOlivenKcal;
