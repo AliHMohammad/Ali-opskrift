@@ -1,4 +1,4 @@
-document.querySelector("#portion").addEventListener("click", beregner);
+document.querySelector("#portion").addEventListener("change", beregner);
 
 function beregner() {
 
